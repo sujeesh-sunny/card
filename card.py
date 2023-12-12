@@ -6,8 +6,8 @@ class Card:
     suits = ["spades", "hearts", "diamonds", "clubs"]
 
     values = [
-        None,
-        None,
+        joker,
+        joker,
         "2",
         "3",
         "4",
@@ -74,7 +74,7 @@ class Player:
         self.name = name
 
 
-class Game:
+class Games:
     def __init__(self):
         while True:
             pattern = r"\W"
@@ -130,5 +130,5 @@ class Game:
         return "It was a tie!"
 
 
-game = Game()
+game = Games()
 game.play_game()
